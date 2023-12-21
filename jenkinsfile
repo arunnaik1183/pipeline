@@ -4,7 +4,7 @@ pipeline {
      stages ('code')
 	 {
 	 steps {
-                 git branch: 'main', changelog: false, poll: false, url: 'https://github.com/arunnaik1183/mavenrepo.git'	 
+                 git branch: 'main', changelog: false, poll: false, url: 'https://github.com/arunnaik1183/pipeline.git'	 
 	       }
      }
   }
