@@ -1,11 +1,12 @@
 pipeline {
-  agent any
-  stages {
-     stages ('code')
-	 {
-	 steps {
-                 git branch: 'main', changelog: false, poll: false, url: 'https://github.com/arunnaik1183/pipeline.git'	 
-	       }
+    agent any
+    stages {
+    stages ('code')
+       steps {
+	  git branch: 'main', changelog: false, poll: false, url: 'https://github.com/arunnaik1183/pipeline.git'	  
+          
      }
-  }
-}
+ }
+  stage('build') {
+     steps {
+
